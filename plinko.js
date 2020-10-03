@@ -4,7 +4,7 @@ class Plinko{
             
             isStatic: true
         }
-        this.body = Bodies.circle(x, y, 10, options);
+        this.body = Bodies.circle(x, y, 5, options);
         World.add(world, this.body);
       }
       display(){
@@ -13,7 +13,7 @@ class Plinko{
         ellipseMode(CENTER);
         fill("white");
         noStroke();
-        ellipse(pos.x, pos.y, 10);
+        ellipse(pos.x, pos.y, 10, 10);
         pop();
       }
 }

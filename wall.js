@@ -7,7 +7,7 @@ class Wall{
         this.body = Bodies.rectangle(x, y, width, height, options);
         this.width = width;
         this.height = height;
-        this.body.angle = angle;
+        Matter.Body.setAngle(this.body,angle);
         World.add(world, this.body);
       }
       display(){

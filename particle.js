@@ -4,7 +4,7 @@ class Particle{
             
             restitution: 0.4
         }
-        this.body = Bodies.circle(x, y, 10, options);
+        this.body = Bodies.circle(x, y, 5, options);
         this.color = color(random(0,255),random(0,255),random(0,255))
         World.add(world, this.body);
       }
