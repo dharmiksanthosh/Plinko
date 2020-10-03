@@ -29,23 +29,23 @@ function setup(){
     div8 = new Div(width/2,494,width,5,PI)
 
 
-    for (var x = 30; x <= width-20; x=x+40) {
+    for (var x = 40; x <= width-20; x=x+40) {
 
         plinkos.push(new Plinko(x,50));
     }
-    for (let x = 15; x <= width-10; x=x+40) {
+    for (let x = 20; x <= width-10; x=x+40) {
        
         plinkos.push(new Plinko(x,100));
     }
-    for (var x = 30; x <= width-20; x=x+40) {
+    for (var x = 40; x <= width-20; x=x+40) {
 
         plinkos.push(new Plinko(x,150));
     }
-    for (let x = 15; x <= width-10; x=x+40) {
+    for (let x = 20; x <= width-10; x=x+40) {
        
         plinkos.push(new Plinko(x,200));
     }
-    for (var x = 30; x <= width-20; x=x+40) {
+    for (var x = 40; x <= width-20; x=x+40) {
 
         plinkos.push(new Plinko(x,250));
     }
@@ -78,7 +78,7 @@ function draw(){
         
         particles[num].display();
     }
-    if(frameCount%20===0){
+    if(frameCount%60===0){
 
         particles.push(new Particle(random(width/2-20,width/2+20),10))
     }
